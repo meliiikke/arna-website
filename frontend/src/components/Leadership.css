@@ -1,0 +1,268 @@
+.leadership-section {
+  background: #f8f9fa;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.leadership-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.leadership-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  min-height: 500px;
+}
+
+.leadership-left {
+  width: 100%;
+  max-width: 100%;
+}
+
+.leadership-right {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Content Section */
+.leadership-content {
+  padding-right: 40px;
+  text-align: left;
+}
+
+.leadership-subtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.leadership-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-gold);
+}
+
+.leadership-title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  max-width: 600px;
+}
+
+.leadership-description {
+  font-size: 0.95rem;
+  color: #000000;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-shadow: none;
+  max-width: 600px;
+}
+
+.leadership-cta-button {
+  background: var(--primary-gold);
+  color: #000;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.leadership-cta-button:hover {
+  background: var(--primary-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(197, 165, 114, 0.3);
+}
+
+/* Team Grid */
+.team-grid {
+  grid-gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.team-member-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px #0000000d;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: .75rem;
+  transition: all .3s ease;
+  width: 275px;
+  height: 275px;
+}
+
+.team-member-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.member-image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  background: #f0f0f0;
+}
+
+.member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.member-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 150px - 0.75rem);
+}
+
+.member-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+
+.member-title {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.member-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.social-btn {
+  width: 24px;
+  height: 24px;
+  background: var(--primary-gold);
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.6rem;
+}
+
+.social-btn:hover {
+  background: var(--primary-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 165, 114, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leadership-layout {
+    gap: 2rem;
+  }
+
+  .leadership-content {
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .leadership-container {
+    padding: 0 1rem;
+  }
+
+  .leadership-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .leadership-section {
+    padding: 3rem 0;
+  }
+
+  .leadership-layout {
+    gap: 1.5rem;
+  }
+
+  .leadership-content {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .leadership-title {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .leadership-description {
+    font-size: 0.85rem;
+    max-width: 100%;
+  }
+
+  .leadership-cta-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.75rem;
+  }
+
+  .team-member-card {
+    padding: 0.5rem;
+    max-width: 180px;
+  }
+
+  .member-image {
+    height: 100px;
+  }
+
+  .member-name {
+    font-size: 0.8rem;
+  }
+
+  .member-title {
+    font-size: 0.7rem;
+  }
+
+  .social-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 0.5rem;
+  }
+}

@@ -1,0 +1,256 @@
+.our-value {
+  background: #f8f9fa;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-value .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.our-value-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  min-height: 500px;
+}
+
+/* Left Side - Image */
+.our-value-image {
+  flex: 1;
+  position: relative;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.value-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.our-value-image:hover .value-image {
+  transform: scale(1.05);
+}
+
+/* Right Side - Content */
+.our-value-text {
+  flex: 1;
+  padding: 20px 0;
+}
+
+/* Header */
+.value-header {
+  margin-bottom: 20px;
+}
+
+.value-subtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-gold, #d4af37);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.value-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--primary-gold, #d4af37);
+}
+
+/* Title */
+.value-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Description */
+.value-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Statistics */
+.value-statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.stat-item {
+  width: 100%;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.stat-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.stat-percentage {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-gold, #d4af37) 0%, #f4d03f 100%);
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #333;
+  border-radius: 50%;
+}
+
+/* Loading States */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  gap: 20px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--primary-gold, #d4af37);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #dc3545;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .our-value {
+    padding: 60px 0;
+  }
+  
+  .our-value-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .our-value-image {
+    height: 300px;
+    order: 1;
+  }
+  
+  .our-value-text {
+    order: 2;
+    padding: 0;
+  }
+  
+  .value-title {
+    font-size: 2rem;
+  }
+  
+  .value-description {
+    font-size: 0.95rem;
+  }
+  
+  .value-statistics {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-value {
+    padding: 40px 0;
+  }
+  
+  .our-value .container {
+    padding: 0 15px;
+  }
+  
+  .our-value-content {
+    gap: 30px;
+  }
+  
+  .our-value-image {
+    height: 250px;
+  }
+  
+  .value-title {
+    font-size: 1.8rem;
+  }
+  
+  .value-description {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  
+  .value-statistics {
+    gap: 15px;
+  }
+  
+  .stat-title,
+  .stat-percentage {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,347 @@
+/* Our Products Section */
+.our-products-section {
+  padding: 3rem 0;
+  background: white;
+  position: relative;
+}
+
+.our-products-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Header Section */
+.our-products-header {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.our-products-title {
+  color: #1a1a1a;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 .6rem;
+  line-height: 1.2;
+}
+
+.our-products-subtitle {
+  font-size: 0.9rem;
+  color: #444; /* Daha net ve koyu renk */
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+.our-products-divider {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #D4AF37, #B8860B);
+  margin: 0;
+  border-radius: 2px;
+}
+
+/* Products Grid */
+.our-products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Product Card */
+.our-product-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid #f0f0f0;
+  cursor: pointer;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.our-product-card {
+  border: 2px solid transparent; /* Normal halde şeffaf border */
+  transform: scale(1.02); /* Normal halde yakınlaşmış görünüm */
+  transition: border-color 0.3s ease;
+}
+
+.our-product-card:hover {
+  transform: scale(1.02); /* Hover'da da aynı boyut */
+  border-color: #666; /* Hover'da gri border */
+  transition: border-color 0.3s ease;
+}
+
+/* Hover'da içerik hiç değişmesin */
+.our-product-card:hover .our-product-title,
+.our-product-card:hover .our-product-description,
+.our-product-card:hover .product-icon15,
+.our-product-card:hover .product-icon15 img {
+  transform: none;
+  transition: none;
+  /* Hover'da da aynı doğal kalite */
+  filter: brightness(1.05) contrast(1.1) saturate(1.1) !important;
+}
+
+/* Product Icon */
+.product-icon15 {
+  align-items: center !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  height: 50px !important; /* 50×50 boyut */
+  justify-content: center !important;
+  margin: 0 auto 1rem !important;
+  width: 50px !important; /* 50×50 boyut */
+  margin-bottom: 13px !important; /* Davuttititrading.com sitesindeki gibi */
+}
+
+
+.product-icon15 img {
+  max-width: 90% !important; /* Davuttititrading.com sitesindeki gibi */
+  object-fit: contain !important;
+  width: 100% !important;
+  height: 100% !important;
+  /* Maksimum kalite ve netlik */
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
+  -ms-interpolation-mode: bicubic !important;
+  backface-visibility: hidden !important;
+  transform: translateZ(0) !important;
+  filter: brightness(1.05) contrast(1.1) saturate(1.1) !important; /* Daha net ve doğal */
+  vertical-align: middle !important; /* Davuttititrading.com sitesindeki gibi */
+  border-style: none !important; /* Davuttititrading.com sitesindeki gibi */
+  will-change: auto !important;
+}
+
+
+.product-icon-placeholder {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #D4AF37, #B8860B);
+  border-radius: 50%;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.icon-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333; /* Daha net ve koyu renk */
+  margin: 0;
+  line-height: 1.3;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+
+/* Loading State */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: #444; /* Daha net ve koyu renk */
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #D4AF37;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .our-products-section {
+    padding: 2.5rem 0;
+  }
+  
+  .our-products-container {
+    padding: 0 1rem;
+  }
+  
+  .our-products-title {
+    font-size: 1.6rem;
+  }
+  
+  .our-products-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .our-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+  
+  .our-product-card {
+    padding: 1.2rem 0.8rem;
+    min-height: 140px;
+  }
+  
+  .product-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.6rem;
+    background: transparent;
+  }
+  
+  .product-icon15 {
+    height: 50px; /* Tablet: 50×50 */
+    width: 50px; /* Tablet: 50×50 */
+    margin-bottom: 13px; /* Davuttititrading.com sitesindeki gibi */
+  }
+  
+  .product-icon15 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: auto;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+  
+  .product-icon-placeholder {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon-text {
+    font-size: 1rem;
+  }
+  
+  .product-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-products-section {
+    padding: 2rem 0;
+  }
+  
+  .our-products-title {
+    font-size: 1.4rem;
+  }
+  
+  .our-products-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .our-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .our-product-card {
+    padding: 1rem 0.6rem;
+    min-height: 120px;
+  }
+  
+  .product-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+    background: transparent;
+  }
+  
+  .product-icon15 {
+    height: 40px !important; /* Mobile: 40×40 */
+    width: 40px !important; /* Mobile: 40×40 */
+    margin-bottom: 13px !important; /* Davuttititrading.com sitesindeki gibi */
+  }
+  
+  .product-icon15 img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+    backface-visibility: hidden !important;
+    transform: translateZ(0) !important;
+    filter: brightness(1.05) contrast(1.1) saturate(1.1) !important;
+    will-change: auto !important;
+  }
+  
+  .product-icon-placeholder {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .icon-text {
+    font-size: 0.9rem;
+  }
+  
+  .product-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .our-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation Enhancements */
+.our-product-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Effects - Removed background overlay */
+
+/* Focus States for Accessibility */
+.our-product-card:focus {
+  outline: 2px solid #D4AF37;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .our-products-section {
+    background: white;
+    box-shadow: none;
+  }
+  
+  .our-product-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}

@@ -1,0 +1,631 @@
+/* Project Detail Page - Dark Theme */
+
+/* WYSIWYG Content Display Styles */
+.wysiwyg-content-display {
+  max-width: 100%;
+  line-height: 1.5;
+  color: #e9ecef;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+}
+
+.wysiwyg-content-display h1,
+.wysiwyg-content-display h2,
+.wysiwyg-content-display h3,
+.wysiwyg-content-display h4,
+.wysiwyg-content-display h5,
+.wysiwyg-content-display h6 {
+  margin: 20px 0 12px 0;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.wysiwyg-content-display h1 { font-size: 1.8em; }
+.wysiwyg-content-display h2 { font-size: 1.5em; }
+.wysiwyg-content-display h3 { font-size: 1.3em; }
+.wysiwyg-content-display h4 { font-size: 1.2em; }
+.wysiwyg-content-display h5 { font-size: 1.1em; }
+.wysiwyg-content-display h6 { font-size: 1em; }
+
+.wysiwyg-content-display p {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #e9ecef;
+  font-size: 14px;
+}
+
+.wysiwyg-content-display img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: block;
+}
+
+/* WYSIWYG resim boyutları - farklı boyutlar için sınıflar */
+.wysiwyg-content-display img.small {
+  max-width: 200px;
+  height: auto;
+}
+
+.wysiwyg-content-display img.medium {
+  max-width: 400px;
+  height: auto;
+}
+
+.wysiwyg-content-display img.large {
+  max-width: 600px;
+  height: auto;
+}
+
+.wysiwyg-content-display img.full-width {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* Sabit boyutlar */
+.wysiwyg-content-display img.size-150 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.wysiwyg-content-display img.size-300 {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.wysiwyg-content-display img.size-500 {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.wysiwyg-content-display ul,
+.wysiwyg-content-display ol {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.wysiwyg-content-display li {
+  margin: 6px 0;
+  line-height: 1.5;
+  color: #e9ecef;
+  font-size: 14px;
+}
+
+.wysiwyg-content-display blockquote {
+  border-left: 4px solid #007bff;
+  padding: 12px 16px;
+  margin: 16px 0;
+  font-style: italic;
+  color: #adb5bd;
+  background: #2d3748;
+  border-radius: 0 6px 6px 0;
+  font-size: 13px;
+}
+
+.wysiwyg-content-display a {
+  color: #66b3ff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.wysiwyg-content-display a:hover {
+  color: #4dabf7;
+}
+
+.wysiwyg-content-display code {
+  background: #2d3748;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #ff6b6b;
+}
+
+.wysiwyg-content-display pre {
+  background: #2d3748;
+  border: 1px solid #4a5568;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.wysiwyg-content-display pre code {
+  background: none;
+  padding: 0;
+  color: #e9ecef;
+}
+
+.wysiwyg-content-display table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: #2d3748;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.wysiwyg-content-display th,
+.wysiwyg-content-display td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #4a5568;
+  color: #e9ecef;
+}
+
+.wysiwyg-content-display th {
+  background: #4a5568;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.wysiwyg-content-display tr:hover {
+  background: #4a5568;
+}
+
+/* Content Sections Fallback Styles */
+.content-sections-fallback {
+  max-width: 100%;
+  line-height: 1.5;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+}
+
+.content-text-section {
+  margin: 16px 0;
+  padding: 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #007bff;
+  font-size: 14px;
+}
+
+.content-image-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.content-image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.content-image-section img:hover {
+  transform: scale(1.02);
+}
+
+.project-description {
+  background: #ffffff0d;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: 16px 0;
+  padding: 16px;
+}
+
+.project-main-image {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.project-main-image img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 500px; /* Maksimum yükseklik */
+  height: auto;
+  object-fit: cover; /* Resmi kırpmadan sığdır */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Ana resim boyut seçenekleri */
+.project-main-image img.small {
+  max-height: 300px;
+}
+
+.project-main-image img.medium {
+  max-height: 500px;
+}
+
+.project-main-image img.large {
+  max-height: 700px;
+}
+
+/* Responsive design for WYSIWYG content */
+@media (max-width: 768px) {
+  .wysiwyg-content-display {
+    font-size: 13px;
+  }
+  
+  .wysiwyg-content-display h1 { font-size: 1.5em; }
+  .wysiwyg-content-display h2 { font-size: 1.3em; }
+  .wysiwyg-content-display h3 { font-size: 1.2em; }
+  
+  .wysiwyg-content-display img {
+    margin: 12px 0;
+  }
+  
+  .wysiwyg-content-display blockquote {
+    padding: 10px 12px;
+    margin: 12px 0;
+    font-size: 12px;
+  }
+  
+  .wysiwyg-content-display pre {
+    padding: 10px;
+    font-size: 0.75em;
+  }
+  
+  .content-text-section {
+    padding: 10px;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  
+  .content-image-section {
+    margin: 12px 0;
+  }
+}
+.project-detail-page {
+  min-height: 100vh;
+  background-color: #1a1a1ae6;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-detail-container {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 135px 300px;
+  max-width: 1200px;
+  padding: 2rem 20px;
+}
+
+/* Header */
+.project-detail-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.btn-back {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Main Content */
+.project-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+}
+
+.project-detail-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.project-description {
+  max-width: 100%;
+}
+
+.project-description p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-indent: 2rem; /* Paragraf başında 2rem girinti */
+}
+
+/* Dinamik İçerik Bölümleri */
+.content-section {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-content p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-indent: 2rem; /* Paragraf başında 2rem girinti */
+}
+
+.image-content {
+  display: flex;
+  justify-content: flex-start; /* center yerine flex-start - sola yasla */
+  margin: 1.5rem 0;
+  flex: 1;
+}
+
+.text-content {
+  flex: 1;
+  margin: 1.5rem 0;
+}
+
+/* Otomatik düzen sistemleri */
+.content-section.auto-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+/* Resim sol, yazı sağ */
+.content-section.image-left-text-right {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.content-section.image-left-text-right .image-content {
+  flex: 0 0 50%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-section.image-left-text-right .text-content-group {
+  flex: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+/* Resim sağ, yazı sol */
+.content-section.image-right-text-left {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.content-section.image-right-text-left .image-content {
+  flex: 0 0 50%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-section.image-right-text-left .text-content-group {
+  flex: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 2rem;
+}
+
+/* Resim ortada, yazı altında */
+.content-section.image-center-text-below {
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-section.image-center-text-below .image-content {
+  margin: 0 0 2rem 0;
+}
+
+.content-section.image-center-text-below .text-content {
+  margin: 0;
+  text-align: center;
+}
+
+/* Yazı grubu */
+.text-content-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.text-content-group .text-content {
+  width: 100%;
+  margin: 0;
+}
+
+.text-content-group .text-content p {
+  margin: 0;
+  text-align: left;
+}
+
+.content-image {
+  max-width: 800px;
+  height: auto;
+  box-shadow: 0 4px 15px #0000004d;
+  transition: transform 0.3s ease;
+  /* Resim kalitesi: tarayıcıya bırak */
+  image-rendering: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.content-image:hover {
+  transform: scale(1.02);
+}
+
+/* Pozisyon bazlı stiller */
+.content-section.top-section {
+  margin-top: 0;
+}
+
+.content-section.middle-section {
+  margin: 2rem 0;
+}
+
+.content-section.bottom-section {
+  margin-bottom: 0;
+}
+
+/* Loading & Error States */
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+  color: white;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #D4AF37;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-container h2 {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+}
+
+.error-container p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .project-detail-container {
+    margin: 150px auto;
+    max-width: 90%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail-container {
+    margin: 180px auto;
+    max-width: 95%;
+    padding: 0 15px;
+    gap: 1.5rem;
+  }
+  
+  .project-detail-title {
+    font-size: 1.5rem;
+  }
+  
+  .project-description p,
+  .text-content p {
+    font-size: 0.9rem;
+    text-indent: 1.5rem; /* Responsive'de biraz daha küçük girinti */
+  }
+  
+  .content-image {
+    max-width: 90%;
+    box-shadow: 0 4px 15px #0000004d;
+    /* Responsive'de de kalite korunur */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Responsive'de otomatik düzeni kaldır */
+  .content-section.auto-layout {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .content-section.auto-layout .image-content,
+  .content-section.auto-layout .text-content-group {
+    flex: 1;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  
+  .content-section.image-left-text-right .text-content-group,
+  .content-section.image-right-text-left .text-content-group {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-detail-container {
+    padding: 1rem 10px;
+    margin: 80px 20px;
+  }
+  
+  .project-detail-title {
+    font-size: 1.3rem;
+  }
+  
+  .project-description p,
+  .text-content p {
+    font-size: 0.85rem;
+    text-indent: 1rem; /* Mobil'de daha küçük girinti */
+  }
+  
+  .btn-back {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .content-image {
+    max-width: 100%;
+    box-shadow: 0 4px 15px #0000004d;
+    /* Mobil'de de kalite korunur */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}

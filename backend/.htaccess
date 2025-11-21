@@ -1,0 +1,5 @@
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "https://arna.one" Header set
+  Access-Control-Allow-Methods "GET, POST, OPTIONS, PUT, DELETE" Header set
+  Access-Control-Allow-Headers "Origin, Content-Type, Accept, Authorization"
+</IfModule>
